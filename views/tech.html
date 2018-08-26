@@ -1,0 +1,22 @@
+
+<div class="item">
+
+
+    <ul class="posts large">
+
+        <li ng-repeat="post in posts">
+            <span class="tag">{{post.source.name}}</span>
+            <div class="cont">
+                <h3><a ng-href={{post.url}}>{{post.title}}</a></h3>
+                <div class="brief">
+
+                    <p >{{post.description}}</p>
+
+                    <div class="thumb">
+                        <img ng-src="{{post.urlToImage}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,22 @@
+
+<div class="item">
+
+    <br>
+    <p class="alert alert-warning" ng-if="me">{{message}}</p>
+    <br>
+    <form>
+        <div class="form-group" >
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter email" ng-model="email" class="form-control">
+
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" id="exampleInputPassword1" name="password" placeholder="Password" ng-model="password"  class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-click="submit()">Submit</button>
+        <button type="button" class="btn btn-light" ng-click="leave()">leave</button>
+    </form>
+
+</div>
